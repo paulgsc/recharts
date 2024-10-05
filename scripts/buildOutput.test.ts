@@ -1,6 +1,8 @@
+import path from 'path';
 import { existsSync } from 'fs';
 import { describe, it, expect } from 'vitest';
 import { globSync } from 'glob';
+
 
 import packageJson from '../package.json';
 
@@ -48,11 +50,13 @@ describe('expected folder structure', () => {
     });
   });
 
-  describe('types folder output', () => {
-    it('should have expected files and no more', () => {
-      expect(globSync('types/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/typesFiles.txt');
-    });
+describe('types folder output', () => {
+  it('should have expected files and no more', () => {
+    const files = globSync('types/**/*', { dot: true })
+      .map(file => path.posix.normalize(file)); // Normalize to Unix-style paths
+    expect(files).toMatchFileSnapshot('./snapshots/typesFiles.txt');
   });
+});
 
   describe('es6 folder output', () => {
     it('should have expected files and no more', () => {
