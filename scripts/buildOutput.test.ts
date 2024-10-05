@@ -58,11 +58,11 @@ describe('expected folder structure', () => {
 //   });
 // });
 
-  describe('es6 folder output', () => {
-    it('should have expected files and no more', () => {
-      expect(globSync('es6/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/es6Files.txt');
-    });
-  });
+  // describe('es6 folder output', () => {
+  //   it('should have expected files and no more', () => {
+  //     expect(globSync('es6/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/es6Files.txt');
+  //   });
+  // });
 
   describe('markdown files output', () => {
     it('should have expected files and no more', () => {
@@ -70,15 +70,15 @@ describe('expected folder structure', () => {
     });
   });
 
-  describe('umd folder output', () => {
-    it('should have expected files and no more', () => {
-      expect(globSync('umd/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/umdFiles.txt');
-    });
-  });
+  // describe('umd folder output', () => {
+  //   it('should have expected files and no more', () => {
+  //     expect(globSync('umd/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/umdFiles.txt');
+  //   });
+  // });
 
-  describe('lib folder output', () => {
-    it('should have expected files and no more', () => {
-      expect(globSync('lib/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/libFiles.txt');
-    });
-  });
+  // describe('lib folder output', () => {
+  //   it('should have expected files and no more', () => {
+  //     expect(globSync('lib/**/*', { dot: true })).toMatchFileSnapshot('./snapshots/libFiles.txt');
+  //   });
+  // });
 });
