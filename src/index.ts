@@ -109,7 +109,8 @@ export { Trapezoid } from './shape/Trapezoid';
 export type { Props as TrapezoidProps } from './shape/Trapezoid';
 
 export { Global } from './util/Global';
-export type { LegendType } from './util/types';
+export { adaptEventsOfChild } from './util/types'
+export type { LegendType, ActiveShape, DataKey, PresentationAttributesAdaptChildEvent, } from './util/types';
 export {filterProps} from './util/ReactUtils'
 
 export  {
