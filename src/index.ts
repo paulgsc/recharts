@@ -110,3 +110,4 @@ export type { Props as TrapezoidProps } from './shape/Trapezoid';
 
 export { Global } from './util/Global';
 export type { LegendType } from './util/types';
+export {filterProps} from './util/ReactUtils'
