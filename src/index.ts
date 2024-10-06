@@ -100,6 +100,7 @@ export { ComposedChart } from './chart/ComposedChart';
 export { SunburstChart } from './chart/SunburstChart';
 
 export { BarRectangle} from './util/BarUtils'
+export type {BarRectangleProps} from './util/BarUtils'
 
 export { Funnel } from './cartesian/Funnel';
 export type { Props as FunnelProps } from './cartesian/Funnel';
